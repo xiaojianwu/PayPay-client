@@ -188,6 +188,7 @@
     <None Include="Resources\css\StyleSheet.css" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="PayPay-client.ico" />
     <Image Include="Resources\Images\common_back_main.png" />
     <Image Include="Resources\Images\messagebox_back.png" />
     <Image Include="Resources\Images\messagebox_qus.png" />

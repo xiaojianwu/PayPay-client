@@ -111,6 +111,7 @@
     <Image Include="Resources\Images\messagebox_qus.png" />
     <Image Include="Resources\Images\messagebox_success.png" />
     <Image Include="Resources\Images\messagebox_warning.png" />
+    <Image Include="PayPay-client.ico" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\css\StyleSheet.css" />
