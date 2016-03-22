@@ -13,7 +13,7 @@ enum MESSAGE_BOX_TYPE {
 	TYPE_SUCCESS
 };
 
-int PayMessageBox(QWidget *parent, QString qsTitle, QString qsContentText);
+int PayMessageBox(QWidget *parent, int type, QString qsTitle, QString qsContentText);
 
 
 class UIMessageBox : public BaseStyleWindow
@@ -24,7 +24,7 @@ public:
     explicit UIMessageBox(QWidget *parent = 0);
     ~UIMessageBox();
 
-	void UIMessageBox::initUI(QString qsTitle, QString qsContentText);
+	void UIMessageBox::initUI(int type, QString qsTitle, QString qsContentText);
 
 private slots:
 	void onOK();

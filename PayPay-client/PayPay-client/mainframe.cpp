@@ -15,10 +15,15 @@ MainFrame::~MainFrame()
 
 }
 
+void MainFrame::initUI()
+{
+
+}
+
 
 void MainFrame::onExit()
 {
-	if (PayMessageBox(this, tr("exit"), tr("are you sure to exit?")) == QDialog::Accepted)
+	if (PayMessageBox(NULL, TYPE_QUESTION, tr("exit"), tr("are you sure to exit?")) == QDialog::Accepted)
 	{
 		close();
 	}

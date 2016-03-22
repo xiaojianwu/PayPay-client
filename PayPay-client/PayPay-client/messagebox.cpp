@@ -1,12 +1,12 @@
 #include "messagebox.h"
 
 
-int PayMessageBox(QWidget *parent, QString qsTitle, QString qsContentText)
+int PayMessageBox(QWidget *parent, int type, QString qsTitle, QString qsContentText)
 {
 
 	UIMessageBox cUIMessageBox(parent);
 	// 初始化窗口内容
-	cUIMessageBox.initUI(qsTitle, qsContentText);
+	cUIMessageBox.initUI(type, qsTitle, qsContentText);
 	return cUIMessageBox.exec();
 }
 
@@ -33,13 +33,22 @@ void UIMessageBox::onCancel()
 	done(QDialog::Rejected);
 }
 
-void UIMessageBox::initUI(QString qsTitle, QString qsContentText)
+void UIMessageBox::initUI(int type, QString qsTitle, QString qsContentText)
 {
 	// 模态和标题
 	ui.label_title->setText(qsTitle);
 
 	ui.label_text->setText(qsContentText);
 
-	
+	switch (type)
+	{
+	case TYPE_INFO:
+	case TYPE_WARNING:
+		ui.label_icon->setPixmap(QPixmap(":/Resources/Images/messagebox_warning.png"));
+		break;
+	case TYPE_QUESTION:
+		ui.label_icon->setPixmap(QPixmap(":/Resources/Images/messagebox_qus.png"));
+		break;
+	}
 
 }

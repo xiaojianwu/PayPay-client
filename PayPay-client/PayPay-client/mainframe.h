@@ -15,6 +15,10 @@ public:
 	~MainFrame();
 
 
+private:
+	void initUI();
+
+
 private slots:
 	void onExit();
 
