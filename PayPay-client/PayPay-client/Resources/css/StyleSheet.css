@@ -1,0 +1,10 @@
+QWidget#MainFrameClass {
+    border-image: url(:/Resources/Images/common_back_main.png); 
+    border-width:60; 
+}
+
+
+QWidget#MessageBoxClass  {
+    border-image: url(:/Resources/Images/messagebox_back.png); 
+    border-width:60 10 42 10;  
+}

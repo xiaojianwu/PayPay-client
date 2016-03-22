@@ -1,12 +1,26 @@
 #include "mainframe.h"
 
+#include "messagebox.h"
+
 MainFrame::MainFrame(QWidget *parent)
-	: QWidget(parent)
+	: BaseStyleWindow(parent)
 {
 	ui.setupUi(this);
+
+	connect(ui.pushButton_exit, SIGNAL(clicked()), this, SLOT(onExit()));
 }
 
 MainFrame::~MainFrame()
 {
 
+}
+
+
+void MainFrame::onExit()
+{
+	if (PayMessageBox(this, tr("exit"), tr("are you sure to exit?")) == QDialog::Accepted)
+	{
+		close();
+	}
+	
 }

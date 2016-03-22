@@ -1,4 +1,11 @@
 <RCC>
-    <qresource prefix="MainFrame">
+    <qresource prefix="/">
+        <file>Resources/css/StyleSheet.css</file>
+        <file>Resources/Images/common_back_main.png</file>
+        <file>Resources/Images/messagebox_back.png</file>
+        <file>Resources/Images/messagebox_qus.png</file>
+        <file>Resources/Images/messagebox_success.png</file>
+        <file>Resources/Images/messagebox_warning.png</file>
+        <file>paypay-client_zh.qm</file>
     </qresource>
 </RCC>

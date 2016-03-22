@@ -33,6 +33,11 @@
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,24 +55,68 @@
     <ClCompile Include="GeneratedFiles\qrc_mainframe.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="basestylewindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_basestylewindow.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_basestylewindow.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="messagebox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_messagebox.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_messagebox.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="mainframe.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="mainframe.ui">
-      <Filter>Form Files</Filter>
-    </CustomBuild>
     <CustomBuild Include="mainframe.qrc">
       <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="basestylewindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="messagebox.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Forms\mainframe.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="Forms\messagebox.ui">
+      <Filter>Form Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_mainframe.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_messagebox.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="PayPay-client.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Images\common_back_main.png" />
+    <Image Include="Resources\Images\messagebox_back.png" />
+    <Image Include="Resources\Images\messagebox_qus.png" />
+    <Image Include="Resources\Images\messagebox_success.png" />
+    <Image Include="Resources\Images\messagebox_warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\css\StyleSheet.css" />
+    <None Include="paypay-client_zh.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="paypay-client_zh.qm" />
   </ItemGroup>
 </Project>
